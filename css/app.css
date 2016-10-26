@@ -1,42 +1,29 @@
 /* Variables */
 /* Samall Navegation */
-.logo-small{
-  float: right;
+
+.hero {
+  background: url("../img/dis_universe_htfm.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh; 
+ }
+.logo{
+  margin-bottom: .54em;
+  font-size: 2rem;
 }
-.title-bar{
-  padding:0 .5rem;
+.logo-icon {
+  margin-right: 7px;
+  max-width: 53px;
 }
-.menu-icon,
-.title-bar-title{
-  position: relative;
-  top:10px;
+.top-bar {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
 }
+
 /* Medium-Up Navigation */
 @media only screen and (min-width:40rem){
-  .logo-wrapper{
-    position: relative;
-  }
-  .logo-wrapper .logo{
-    width:118px;
-    height: 92px;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: -6px;
-    margin-left: -59px;    
-  }
-  .top-bar-right{
-    width: 50%;
-    padding-left: 86px;
-  }
-  .top-bar-right ul{
-    float: left;
-  }
-  .top-bar-left{
-    width: 50%;
-    padding-right: 86px;    
-  }
-  .top-bar-left ul{
-    float: right;    
+  .logo-icon {
+    margin-right: 7px;
+    max-width: 53px;
   }
 }
