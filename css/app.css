@@ -2,22 +2,40 @@
 /* Samall Navegation */
 
 .hero {
-  background: url("../img/dis_universe_htfm.jpg") no-repeat center center;
+  background: url("../img/keyvisual.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh; 
+  color:white;
  }
+.hero h1{
+  margin-top: 2.5em;
+  font-size: 8em;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+}
+
 .logo{
-  margin-bottom: .54em;
+  margin-bottom: .3em;
   font-size: 2rem;
+  color:white;
 }
 .logo-icon {
-  margin-right: 7px;
+  margin: 7px;
   max-width: 53px;
 }
-.top-bar {
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
+.top-bar{
+  position: relative;
+}
+.top-bar ul{
+  background-color: transparent;
+
+}
+section.row.align-middle {
+    height: 100vh;
+}
+.row .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Medium-Up Navigation */
@@ -25,5 +43,16 @@
   .logo-icon {
     margin-right: 7px;
     max-width: 53px;
+  }
+  .top-bar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  .top-bar ul{
+  background-color: transparent;
+  }
+  .logo-icon{
+    margin: 7px;
   }
 }
