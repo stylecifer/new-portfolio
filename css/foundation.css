@@ -448,13 +448,15 @@ blockquote,
 th,
 td {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  }
 
 p {
   font-size: inherit;
   line-height: 1.6;
   margin-bottom: 1rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  }
 
 em,
 i {
@@ -615,10 +617,10 @@ kbd {
   line-height: 1.4;
   color: #8a8a8a; }
 
-.lead {
+/*.lead {
   font-size: 125%;
   line-height: 1.6; }
-
+*/
 .stat {
   font-size: 2.5rem;
   line-height: 1; }
@@ -1069,7 +1071,8 @@ select {
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
   background-color: #2ba6cb;
-  color: #fefefe; }
+  color: #fefefe;
+  }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
@@ -1080,7 +1083,8 @@ select {
   .button.small {
     font-size: 0.75rem; }
   .button.large {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    }
   .button.expanded {
     display: block;
     width: 100%;
@@ -1148,9 +1152,10 @@ select {
       .button.hollow.secondary:hover, .button.hollow.secondary:focus {
         border-color: #757575;
         color: #757575; }
-    .button.hollow.alert {
+    /*.button.hollow.alert {
       border: 1px solid #c60f13;
-      color: #c60f13; }
+      color: #c60f13;
+      }*/
       .button.hollow.alert:hover, .button.hollow.alert:focus {
         border-color: #63080a;
         color: #63080a; }
@@ -3050,11 +3055,12 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 .column, .columns {
   -webkit-flex: 1 1 0px;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  min-width: initial; }
+  min-width: initial;
+  }
 
 .column.row.row, .row.row.columns {
   float: none;

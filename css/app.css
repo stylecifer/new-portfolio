@@ -1,6 +1,8 @@
 /* Variables */
 /* Samall Navegation */
 
+
+/* Hero section */
 .hero {
   background: url("../img/keyvisual.jpg") no-repeat center center;
   background-size: cover;
@@ -8,8 +10,7 @@
   color:white;
  }
 .hero h1{
-  margin-top: 2.5em;
-  font-size: 8em;
+  font-size: 1.8em;
   font-weight: lighter;
   font-family: 'Roboto', sans-serif;
 }
@@ -28,16 +29,84 @@
 }
 .top-bar ul{
   background-color: transparent;
+}
+.lead {
+    font-weight: lighter;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 9.3rem;
+    font-family: Roboto;
+}
+.button.hollow.alert {
+    border: 1px solid #ff0058;
+    color: #ff0058;
+    margin-bottom:3rem
+}
+/*End Hero section */
 
-}
-section.row.align-middle {
-    height: 100vh;
-}
-.row .row {
-  margin-left: 0;
-  margin-right: 0;
+.vine {
+    margin: 1rem 0;
 }
 
+.image-wrapper {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  }
+
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  }
+
+.overlay-slide-in-left img {
+  transition: all 0.3s ease-in-out;
+  }
+.overlay-slide-in-left .image-overlay-content {
+  background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-110%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 7px #ccc; }
+.overlay-slide-in-left h2 {
+  font-size: 1.8rem;
+  margin-top: 9%;
+  color: #000;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+.overlay-slide-in-left p {
+  opacity: 0;
+  color: #333;
+  transition: all 0.2s linear; }
+.overlay-slide-in-left .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+  border-radius: 7px; }
+  .overlay-slide-in-left .button:hover {
+    background-color: #444; }
+.overlay-slide-in-left:hover .image-overlay-content {
+  transform: translateX(0px); }
+.overlay-slide-in-left:hover img {
+  transform: translateX(80%);
+  transition-delay: 0.1s; }
+.overlay-slide-in-left:hover p {
+  opacity: 1;
+  transition-delay: 0.4s; }
 /* Medium-Up Navigation */
 @media only screen and (min-width:40rem){
   .logo-icon {
@@ -54,5 +123,8 @@ section.row.align-middle {
   }
   .logo-icon{
     margin: 7px;
+  }
+  .hero h1{
+    font-size:8em;
   }
 }
