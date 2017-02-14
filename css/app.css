@@ -6,7 +6,7 @@
 .hero {
   background: url("../img/keyvisual.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh; 
+  height: 100vh;
   color:white;
  }
 .hero h1{
@@ -38,9 +38,10 @@
     font-family: Roboto;
 }
 .button.hollow.alert {
+    margin: 0 auto;
     border: 1px solid #ff0058;
     color: #ff0058;
-    margin-bottom:3rem
+    margin-bottom:3rem;
 }
 /*End Hero section */
 
