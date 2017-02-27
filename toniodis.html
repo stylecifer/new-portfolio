@@ -1,172 +1,233 @@
 <!doctype html>
 <html class="no-js" lang="es" dir="ltr">
-  <head>
+    <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toniodis | Hack the Media</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500i,900" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/an_icon.png" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:200,900|Roboto:400,400i,700">
     <!-- <link rel="stylesheet" href="css/foundation.css"> -->
-    <link rel="stylesheet" href="css/f63.css">
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
+ </head>
     <body>
     <!-- Start Top Bar -->
-    <nav class="top-bar">
-      <div class="top-bar-left row">
-          <figure class="logo-icon"><img src="img/an_icon.png" alt="icon of tonioDis"></figure>
-          <h1 class="logo align-self-bottom">tonioDis</h1>
-      </div>
-      <div class="top-bar-right">
-        <ul class="vertical medium-horizontal menu">
-          <li><a href="#">Web</a></li>
-          <li><a href="#">Animate</a></li>
-          <li><a href="#">Ads</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
+    <!-- off-canvas title bar for 'small' screen -->
+    <nav class="title-bar" data-responsive-toggle="widemenu" data-hide-for="large">
+        <div class="title-bar-left flex-container">
+            <figure class="logo-icon"><img src="img/an_icon.png" alt="icon of tonioDis"></figure>
+            <h1 class="logo align-self-bottom">tonioDis</h1>
+        </div>
+        <div class="title-bar-rigth">
+            <button class="menu-icon align-self-middle" type="button" data-open="offCanvas"></button>
+        </div>
     </nav>
-    <!-- End Top Bar -->
-    <!-- Hero section -->
-    <header class="hero row align-center large-12 small-collapse">
-        <div class="large-10 align-self-middle text-center">
-            <h1>Hack the f***ing Media</h1>
-            <p class="lead">Conoce todas las técnicas que he aprendido para hacer crecer cualquier negocio usando los medios digitales e incluso los tradicionales para impulsar tu marca directamente a los buenos recuerdos de las personas
-            </p>
-            <a href="#" class="alert hollow button small">__go__</a>
-        </div>
-    </header>
-    <!-- End Hero section -->
-    <!-- About Section -->
-
-    <section id="about" class="row large-12">
-        <div class="columns small-12 medium-4">
-        <!-- Grid Example -->
-
-            <iframe src="https://vine.co/v/57MKXmVKup1/embed/simple"
-            width="600" height="600" frameborder="0">
-            </iframe>
-
-
-        </div><!-- columns small-12 vine ends -->
-
-        <div class="columns small-12 medium-8 callout">
-          <h2 class="about-title">Desempeño singular en estas áreas</h2>
-        </div>
-    </section>
-    <!-- End About Section -->
-    <section id="Portfolio" class="row small-12 large-12 align-center">
-        <div class="Frontend row is-collapse-child large-12">
-            <h2 class="small-12 text-center">Front-end design</h2>
-            <div class="small-12 columns medium-4">
-                <div class="image-wrapper overlay-slide-in-left">
-                        <img src="img/tvify-cover.jpg" />
-                    <div class="image-overlay-content">
-                          <h2>.overlay-slide-in-left</h2>
-                          <p class="price">$2319.99</p>
-                          <a href="#" class="button">Buy Me</a>
-                    </div>
-                </div>
-            </div>
-            <div class="small-12 columns medium-4">
-                    <div class="image-wrapper overlay-slide-in-left">
-                        <img src="img/eltiempo-cover.jpg"/>
-                        <div class="image-overlay-content">
-                          <h2>.overlay-slide-in-left</h2>
-                          <p class="price">$2319.99</p>
-                          <a href="#" class="button">Buy Me</a>
+    <nav class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="top-bar-title flex-container tonioDisNav">
+              <figure class="logo-icon"><img src="img/icon-toniodis.jpg" alt="Profile Image of tonioDis"></figure>
+              <h1 class="logo align-self-bottom">tonioDis</h1>
+          </div>
+        <div class="top-bar-left tonioDisNav">
+            <ul class="vertical menu" data-magellan>
+                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-at-sign"></i><a href="#Front-end">Web</a></li>
+                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-play-circle"></i><a href="#Audiovisual">Animate</a></li>
+                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-eye"></i><a href="#">Ads</a></li>
+                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-torso-business"></i><a href="#Contact">Contacto</a></li>
+            </ul>
+          </div>
+    </nav>
+        <!-- End Top Bar -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Hero section -->
+        <header class="hero row small-12 align-center align-middle full-height">
+            <div class="column small-10 ">
+                <div class="row align-center">
+                    <div class="row small-5">
+                        <div class="column small-4 align-self-middle">
+                            <img src="img/an_icon.png" alt="'AN' the icon of tonioDis">
+                        </div>
+                        <div class="column small-8">
+                            <div class="row">
+                                <h1 class="brand">tonioDis</h1>
+                            </div>
+                            <div class="row">
+                                <h3 class="slogan"><i>You'll wanna <b>Dis</b> with me</i></h3>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="row text-center">
+                    <p class="lead">Conoce todas las técnicas que he aprendido para hacer crecer cualquier negocio usando los medios digitales e incluso los tradicionales para impulsar tu marca directamente a los buenos recuerdos de las personas</p>
+                    <a href="#" class="alert hollow button small">__go__</a>
+                </div>
             </div>
-            <div class="small-12 columns medium-4">
-                    <div class="image-wrapper overlay-slide-in-left">
-                        <img src="img/paralaje-cover.jpg" />
-                        <div class="image-overlay-content">
-                          <h2>.overlay-slide-in-left</h2>
-                          <p class="price">$2319.99</p>
-                          <a href="#" class="button">Buy Me</a>
+        </header>
+        <!-- End Hero section -->
+        <!-- About Section -->
+        <section id="about" data-magellan-target="about" class="flex-container full-height About align-center align-middle">
+            <div class="row align-center align-bottom">
+                <!-- tonioDis Vine vid -->
+                <div class="columns small-12 medium-4">
+                    <iframe class="Shadows" src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe>
+                </div>
+                <!-- tonioiDis vine vid ends -->
+                <!-- Call out¡! -->
+                <div class="columns small-12 medium-7">
+                    <h2 class="about-title">Diseño gráfico es comunicación visual</h2>
+                    <p class="lead">Y he desarrollado mi talento gracias al periodismo, marketing y la publicidad.</p>
+                </div>
+                <!-- Call out ends -->
+            </div>
+        </section>
+        <!-- About Section End -->
+        <!-- Portfolio Section -->
+        <section id="Front-end" class="Frontend flex-container full-height align-center align-middle" data-magellan-target="Front-end">
+            <div class="row collapse large-12 align-middle align-center">
+                <div class="column small-10 text-center">
+                    <div class="row align-center">
+                        <div class="Icon-title column small-2">< / ></div>
+                    </div>
+                    <h2>Front-end design</h2>
+                    <p class="lead Margin-bottom-lead">Una de las últimas habilidades que aun sigo perfeccionando </p>
+                </div>
+                <div class="small-12 columns medium-4">
+                            <div class="image-wrapper overlay-slide-in-left">
+                                <img src="img/tvify-cover.jpg" />
+                                <div class="image-overlay-content">
+                                      <h2>.overlay-slide-in-left</h2>
+                                      <p class="price">$2319.99</p>
+                                      <a href="#" class="button">Buy Me</a>
+                                </div>
+                            </div>
                         </div>
+                <div class="small-12 columns medium-4">
+                                <div class="image-wrapper overlay-slide-in-left">
+                                    <img src="img/eltiempo-cover.jpg"/>
+                                    <div class="image-overlay-content">
+                                      <h2>.overlay-slide-in-left</h2>
+                                      <p class="price">$2319.99</p>
+                                      <a href="#" class="button">Buy Me</a>
+                                    </div>
+                                </div>
+                        </div>
+                <div class="small-12 columns medium-4">
+                                <div class="image-wrapper overlay-slide-in-left">
+                                    <img src="img/paralaje-cover.jpg" />
+                                    <div class="image-overlay-content">
+                                      <h2>.overlay-slide-in-left</h2>
+                                      <p class="price">$2319.99</p>
+                                      <a href="#" class="button">Buy Me</a>
+                                    </div>
+                                </div>
+                        </div>
+                <div class="small-12 columns medium-3">
+                            <div class="image-wrapper overlay-slide-in-left">
+                                <img src="img/marvel-cover.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-slide-in-left</h2>
+                                    <p class="price">$2319.99</p>
+                                    <a href="#" class="button">Buy Me</a>
+                                </div>
+                            </div>
+                        </div>
+                <div class="small-12 columns medium-3">
+                            <div class="image-wrapper overlay-slide-in-left">
+                                <img src="img/zurita.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-slide-in-left</h2>
+                                    <p class="price">$2319.99</p>
+                                    <a href="#" class="button">Buy Me</a>
+                                </div>
+                            </div>
+                        </div>
+                <div class="small-12 columns medium-3">
+                            <div class="image-wrapper overlay-slide-in-left">
+                                <img src="img/masterclass.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-slide-in-left</h2>
+                                    <p class="price">$2319.99</p>
+                                    <a href="#" class="button">Buy Me</a>
+                                </div>
+                            </div>
+                        </div>
+                <div class="small-12 columns medium-3">
+                            <div class="image-wrapper overlay-slide-in-left">
+                                <img src="img/antoniodibu.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-slide-in-left</h2>
+                                    <p class="price">$2319.99</p>
+                                    <a href="#" class="button">Buy Me</a>
+                                </div>
+                            </div>
+                        </div>
+            </div><!--Frontend ends -->
+        </section>
+        <!-- Audiovisuales -->
+        <section id="Audiovisual" data-magellan-target="Audiovisual" class="Audiovisual full-height flex-container align-middle">
+            <div class="row collapse align-justify align-top large-11">
+                <h2 class="row column collapse small-12 align-center text-center">Audiovisual</h2>
+                <div class="Vines row collapse column align-top large-4">
+                    <div class="columns medium-6">
+                        <iframe src="https://vine.co/v/51jIwXAaBpI/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
                     </div>
-            </div>
-            <div class="small-12 columns medium-3">
-                <div class="image-wrapper overlay-slide-in-left">
-                    <img src="img/marvel-cover.jpg" />
-                    <div class="image-overlay-content">
-                        <h2>.overlay-slide-in-left</h2>
-                        <p class="price">$2319.99</p>
-                        <a href="#" class="button">Buy Me</a>
+                    <div class="columns medium-6">
+                        <iframe src="https://vine.co/v/55xbA5eh6aD/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                    </div>
+                    <div class="columns medium-6">
+                        <iframe src="https://vine.co/v/ilK7Xvr2UP3/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                    </div>
+                    <div class="columns medium-6">
+                        <iframe src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                    </div>
+                    <h3 class="row small-12 align-center">Colección de Vines</h3>
+                </div><!-- Vines Ends -->
+                <div class="YTube column small-12 large-7">
+                    <div class="row column widescreen flex-video collapse align-center">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/k0UtOcGNEzc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="row small-12 align-center">
+                        <h3>Play the demo reel 2016</h3>
                     </div>
                 </div>
+            </div><!-- Audiovisuales ends -->
+        </section><!--Ends Porfolio -->
+        <!-- Portfolio Ends -->
+        <!-- Footer -->
+        <footer id="Contact" data-magellan-target="Contact" class="row align-center small-up-1 full-height">
+            <div class="column text-center">
+                <p>Estoy en toda la web, compruébalo googleando tonioDis :)</p>
             </div>
-            <div class="small-12 columns medium-3">
-                <div class="image-wrapper overlay-slide-in-left">
-                    <img src="img/zurita.jpg" />
-                    <div class="image-overlay-content">
-                        <h2>.overlay-slide-in-left</h2>
-                        <p class="price">$2319.99</p>
-                        <a href="#" class="button">Buy Me</a>
-                    </div>
-                </div>
+            <div class="column linkedin">
+                <i class="fi-social-linkedin"></i>
+                <a href="http://cl.linkedin.com/in/toniodis" target="_blank">Antonio Silva</a>
             </div>
-            <div class="small-12 columns medium-3">
-                <div class="image-wrapper overlay-slide-in-left">
-                    <img src="img/masterclass.jpg" />
-                    <div class="image-overlay-content">
-                        <h2>.overlay-slide-in-left</h2>
-                        <p class="price">$2319.99</p>
-                        <a href="#" class="button">Buy Me</a>
-                    </div>
-                </div>
+            <div class="column facebook">
+                <i class="fi-social-facebook"></i>
+                <a href="https://www.facebook.com/toniodis" target="_blank">tonioDis</a>
             </div>
-            <div class="small-12 columns medium-3">
-                <div class="image-wrapper overlay-slide-in-left">
-                    <img src="img/antoniodibu.jpg" />
-                    <div class="image-overlay-content">
-                        <h2>.overlay-slide-in-left</h2>
-                        <p class="price">$2319.99</p>
-                        <a href="#" class="button">Buy Me</a>
-                    </div>
-                </div>
+            <div class="column twitter">
+                <i class="fi-social-twitter"></i>
+                <a href="https://twitter.com/toniodis" target="_blank">tonioDis</a>
             </div>
-        </div><!--Frontend ends -->
-        <div class="Audiovisual row is-collapse-child large-12">
-            <h2 class="small-12 text-center">Audiovisual</h2>
-            <h3 class="small-12 text-center">Colección de Vines</h3>
-            <div class="Vines row collapse medium-up-4">
-                <div class="columns">
-                    <iframe src="https://vine.co/v/51jIwXAaBpI/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
-                </div>
-                <div class="columns">
-                    <iframe src="https://vine.co/v/55xbA5eh6aD/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
-                </div>
-                <div class="columns">
-                    <iframe src="https://vine.co/v/ilK7Xvr2UP3/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
-                </div>
-                <div class="columns">
-                    <iframe src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
-                </div>
-
-            </div><!-- Vines Ends -->
-            <h2 class="small-12 text-center">
-                Play the demo reel 2016
-            </h2>
-            <div class="small-12 flex-video widescreen collapse">
-
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/k0UtOcGNEzc" frameborder="0" allowfullscreen></iframe>
-
+            <div class="column github">
+                <i class="fi-social-github"></i>
+                <a href="http://github.com/toniodis/" target="_blank">tonioDis</a>
             </div>
-
+            <div class="column youtube">
+                <i class="fi-social-youtube"></i>
+                <a href="https://www.youtube.com/c/Dibujalo" target="_blank">tonioDis</a>
             </div>
-        </div><!-- Audiovisuales ends -->
+        </footer>
+        <!-- Footer Ends -->
+    </div><!-- off canvas content -->
 
-    </section><!--Ends Porfolio -->
 
-    </div>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-</body>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+    </body>
 </html>
