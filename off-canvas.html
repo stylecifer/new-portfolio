@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Off canvas Exercices</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+    <nav class="off-canvas-absolute position-left" id="offCanvas" data-off-canvas>
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="top-bar-left">
+            <figure class="logo-icon"><img src="img/an_icon.png" alt="icon of tonioDis"></figure>
+            <h1 class="logo align-self-bottom">tonioDis</h1>
+        </div>
+        <div class="top-bar-right">
+          <ul class="vertical medium-horizontal menu">
+            <li><a href="#">Web</a></li>
+            <li><a href="#">Animate</a></li>
+            <li><a href="#">Ads</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content>
+        <header class="hero row align-center large-12 small-collapse">
+            <div class="large-10 align-self-middle text-center">
+                  <h1>Hack the f***ing Media</h1>
+                  <p class="lead">Conoce todas las técnicas que he aprendido para hacer crecer cualquier negocio usando los medios digitales e incluso los tradicionales para impulsar tu marca directamente a los buenos recuerdos de las personas
+                  </p>
+                  <a href="#" class="alert hollow button small">__go__</a>
+                  <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+              </div>
+            <div class="column toggler-container">
+                <ul class="menu" id="menuBar" data-toggler=".expanded">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                </ul>
+                <p><a data-toggle="menuBar">Expand!</a></p>
+            </div>
+        </header>
+    </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+    </body>
+</html>
