@@ -1,16 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="es" dir="ltr">
     <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toniodis | Hack the Media</title>
-    <link rel="icon" type="image/png" href="img/an_icon.png" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:200,900|Roboto:400,400i,700">
-    <!-- <link rel="stylesheet" href="css/foundation.css"> -->
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
- </head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Toniodis | You'll wanna Dis with me</title>
+        <link rel="icon" type="image/png" href="img/an_icon.png" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:200,900|Roboto:400,400i,700">
+        <!-- <link rel="stylesheet" href="css/foundation.css"> -->
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
     <body>
     <!-- Start Top Bar -->
     <!-- off-canvas title bar for 'small' screen -->
@@ -32,10 +32,10 @@
               <h1 class="logo align-self-bottom">tonioDis</h1>
           </div>
         <div class="top-bar-left tonioDisNav">
-            <ul class="vertical menu" data-magellan>
+            <ul class="vertical menu" data-magellan data-bar-offset="-26" data-animation-easing="swing" >
                 <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-at-sign"></i><a href="#Front-end">Web</a></li>
-                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-play-circle"></i><a href="#Audiovisual">Animate</a></li>
-                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-eye"></i><a href="#">Ads</a></li>
+                <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-play-circle"></i><a href="#Audiovisual">Audiovisual</a></li>
+                <!-- <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-eye"></i><a href="#">Ads</a></li> -->
                 <li class="flex-container tonioDisNav"><i class="nav-icon-size fi-torso-business"></i><a href="#Contact">Contacto</a></li>
             </ul>
           </div>
@@ -44,7 +44,7 @@
     <div class="off-canvas-content" data-off-canvas-content>
         <!-- Hero section -->
         <header class="hero row small-12 align-center align-middle full-height">
-            <div class="column small-10 ">
+            <div class="column row align-center small-10 ">
                 <div class="row align-center">
                     <div class="row small-5">
                         <div class="column small-4 align-self-middle">
@@ -55,14 +55,14 @@
                                 <h1 class="brand">tonioDis</h1>
                             </div>
                             <div class="row">
-                                <h3 class="slogan"><i>You'll wanna <b>Dis</b> with me</i></h3>
+                                <h3 class="slogan"><i>You'll wanna <b>Dis</b></i></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center">
-                    <p class="lead">Conoce todas las técnicas que he aprendido para hacer crecer cualquier negocio usando los medios digitales e incluso los tradicionales para impulsar tu marca directamente a los buenos recuerdos de las personas</p>
-                    <a href="#" class="alert hollow button small">__go__</a>
+                <div class="row text-center" data-magellan data-bar-offset="-26" data-animation-easing="swing">
+                    <p class="lead">Qué tal, soy diseñador gráfico profesional luciéndose como Front-end, y les he traído hasta acá para presentarles el nuevo diseño de mi portafolio, está hecho con <a href="http://foundation.zurb.com/" target="_blank">Foundations 6.3</a> y felizmente on-line gracias a <a href="https://github.com/" target="_blank">GitHub</a></p>
+                    <a data-magellan-target="about" href="#about" class="alert hollow button small">¡A ver!</a>
                 </div>
             </div>
         </header>
@@ -72,13 +72,13 @@
             <div class="row align-center align-bottom">
                 <!-- tonioDis Vine vid -->
                 <div class="columns small-12 medium-4">
-                    <iframe class="Shadows" src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe>
+                    <iframe class="Shadows" src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
                 </div>
                 <!-- tonioiDis vine vid ends -->
                 <!-- Call out¡! -->
                 <div class="columns small-12 medium-7">
                     <h2 class="about-title">Diseño gráfico es comunicación visual</h2>
-                    <p class="lead">Y he desarrollado mi talento gracias al periodismo, marketing y la publicidad.</p>
+                    <p class="lead">Y he desarrollado mi talento gracias al periodismo, marketing, publicidad y la programación.</p>
                 </div>
                 <!-- Call out ends -->
             </div>
@@ -86,146 +86,207 @@
         <!-- About Section End -->
         <!-- Portfolio Section -->
         <section id="Front-end" class="Frontend flex-container full-height align-center align-middle" data-magellan-target="Front-end">
-            <div class="row collapse large-12 align-middle align-center">
+            <div class="row column collapse large-12 align-middle align-center">
                 <div class="column small-10 text-center">
-                    <div class="row align-center">
+
+                    <!-- <div class="row small-12 align-center">
                         <div class="Icon-title column small-2">< / ></div>
-                    </div>
+                    </div> --><!-- Este es el primer icono que hice para Front-end -->
+
                     <h2>Front-end design</h2>
-                    <p class="lead Margin-bottom-lead">Una de las últimas habilidades que aun sigo perfeccionando </p>
+                    <p class="lead Margin-bottom-lead">Una de las últimas habilidades que aun sigo perfeccionando</p>
                 </div>
+
+<!-- TVify -->
                 <div class="small-12 columns medium-4">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/tvify-cover.jpg" />
-                                <div class="image-overlay-content">
-                                      <h2>.overlay-slide-in-left</h2>
-                                      <p class="price">$2319.99</p>
-                                      <a href="#" class="button">Buy Me</a>
-                                </div>
-                            </div>
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/tvify-cover.jpg"/>
+                        <div class="image-overlay-content row column align-center align-middle">
+                          <h3>TVify</h3>
+                          <p class="price">Encuentra todas las series de televisión y selecciona tus favoritas</p>
+                          <div class="card-divider flex-container align-spaced align-bottom small-12">
+                              <i>JS</i><i>HTML</i><i>CSS</i>
+                              <a href="http://toniodis.github.io/tvify/" class="button" target="_blank">Live demo</a>
+                          </div>
                         </div>
+                    </div>
+                </div>
+
+<!-- El Tiempo -->
+
                 <div class="small-12 columns medium-4">
-                                <div class="image-wrapper overlay-slide-in-left">
-                                    <img src="img/eltiempo-cover.jpg"/>
-                                    <div class="image-overlay-content">
-                                      <h2>.overlay-slide-in-left</h2>
-                                      <p class="price">$2319.99</p>
-                                      <a href="#" class="button">Buy Me</a>
-                                    </div>
-                                </div>
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/eltiempo-cover.jpg"/>
+                        <div class="image-overlay-content row column align-center align-middle">
+                          <h3>El Tiempo</h3>
+                          <p class="price">Descubre cual es la temperatura en todas las ciudade del mundo</p>
+                          <div class="card-divider flex-container align-spaced align-bottom small-12">
+                              <i>JS</i><i>HTML</i><i>CSS</i>
+                              <a href="#" class="button" target="_blank">Live demo</a>
+                          </div>
                         </div>
+                    </div>
+                </div>
+
+<!-- Paraleje -->
+
                 <div class="small-12 columns medium-4">
-                                <div class="image-wrapper overlay-slide-in-left">
-                                    <img src="img/paralaje-cover.jpg" />
-                                    <div class="image-overlay-content">
-                                      <h2>.overlay-slide-in-left</h2>
-                                      <p class="price">$2319.99</p>
-                                      <a href="#" class="button">Buy Me</a>
-                                    </div>
-                                </div>
-                        </div>
-                <div class="small-12 columns medium-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/marvel-cover.jpg" />
-                                <div class="image-overlay-content">
-                                    <h2>.overlay-slide-in-left</h2>
-                                    <p class="price">$2319.99</p>
-                                    <a href="#" class="button">Buy Me</a>
-                                </div>
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/paralaje-cover.jpg" />
+                        <div class="image-overlay-content row column align-center align-middle">
+                            <h3>Paralaje</h3>
+                            <p class="price">Establece capas que reaccionan a la posición del mouse y la inclinación en móvil</p>
+                            <div class="card-divider flex-container align-spaced align-bottom small-12">
+                                <a href="http://toniodis.github.io/dibuplax/" target="_blank" >Live demo</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+<!-- Zurita -->
                 <div class="small-12 columns medium-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/zurita.jpg" />
-                                <div class="image-overlay-content">
-                                    <h2>.overlay-slide-in-left</h2>
-                                    <p class="price">$2319.99</p>
-                                    <a href="#" class="button">Buy Me</a>
-                                </div>
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/zurita.jpg" />
+                        <div class="image-overlay-content row column align-center align-middle">
+                            <h3>Zurita</h3>
+                            <p class="price">Sitio web multilenguaje que detecta el idiona ma del navegador</p>
+                            <div class="card-divider flex-container align-spaced align-bottom small-12">
+                                <i>WP</i><i>HTML</i><i>CSS</i>
+                                <a href="http://zurita.co/" class="button" target="_blank">Live demo</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+<!-- Marvel -->
                 <div class="small-12 columns medium-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/masterclass.jpg" />
-                                <div class="image-overlay-content">
-                                    <h2>.overlay-slide-in-left</h2>
-                                    <p class="price">$2319.99</p>
-                                    <a href="#" class="button">Buy Me</a>
-                                </div>
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/marvel-cover.jpg" />
+                        <div class="image-overlay-content row column align-center align-middle">
+                            <h3>Marvel Cards</h3>
+                            <p class="price">Arquitectura front-end para la UI de juego de cartas</p>
+                            <div class="card-divider flex-container align-spaced align-bottom small-12">
+                                <i>HTML</i><i>CSS</i>
+                                <a href="http://toniodis.github.io/marvel-card-game/" target="_blank" class="button">Live demo</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+<!-- MasterClass -->
                 <div class="small-12 columns medium-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/antoniodibu.jpg" />
-                                <div class="image-overlay-content">
-                                    <h2>.overlay-slide-in-left</h2>
-                                    <p class="price">$2319.99</p>
-                                    <a href="#" class="button">Buy Me</a>
-                                </div>
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/masterclass.jpg" />
+                        <div class="image-overlay-content row column align-center align-middle">
+                            <h3>MasterClass</h3>
+                            <p class="price">Landing Page de esta plataforma</p>
+                            <div class="card-divider flex-container align-spaced align-bottom small-12">
+                                <a href="http://masterclass.cl" class="button" target="_blank">Live demo</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+<!-- Brand Designer -->
+                <div class="small-12 columns medium-3">
+                    <div class="image-wrapper overlay-slide-in-left">
+                        <img src="img/antoniodibu.jpg" />
+                        <div class="image-overlay-content row column align-center align-middle">
+                            <h3>Brand Designer</h3>
+                            <p class="price">El roll del diseñador en el mercado</p>
+                            <div class="card-divider flex-container align-spaced align-bottom small-12">
+                                <a href="https://toniodis.github.io/brand-designer/antonio.html" class="button" target="_blank">Live demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div><!--Frontend ends -->
         </section>
-        <!-- Audiovisuales -->
+<!-- Audiovisuales -->
         <section id="Audiovisual" data-magellan-target="Audiovisual" class="Audiovisual full-height flex-container align-middle">
             <div class="row collapse align-justify align-top large-11">
-                <h2 class="row column collapse small-12 align-center text-center">Audiovisual</h2>
+                <div class="column text-center align-center align-top large-12">
+                    <h2>
+                        Audiovisual
+                    </h2>
+                    <p class="lead">
+                    Mis esfuerzos por convertirme en filmmaker y los últimos vídeos que realizo están en
+                        <a target="_blank" href="https://www.youtube.com/user/Stylustonypro/" >
+                            youtube
+                        </a>
+                    </p>
+                </div>
                 <div class="Vines row collapse column align-top large-4">
                     <div class="columns medium-6">
-                        <iframe src="https://vine.co/v/51jIwXAaBpI/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        <img src="http://placehold.it/720x720">
+                        <!-- <iframe src="https://vine.co/v/51jIwXAaBpI/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script> -->
                     </div>
                     <div class="columns medium-6">
-                        <iframe src="https://vine.co/v/55xbA5eh6aD/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        <img src="http://placehold.it/720x720">
+                        <!-- <iframe src="https://vine.co/v/55xbA5eh6aD/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script> -->
                     </div>
                     <div class="columns medium-6">
-                        <iframe src="https://vine.co/v/ilK7Xvr2UP3/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        <img src="http://placehold.it/720x720">
+                        <!-- <iframe src="https://vine.co/v/ilK7Xvr2UP3/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script> -->
                     </div>
                     <div class="columns medium-6">
-                        <iframe src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        <img src="http://placehold.it/720x720">
+                        <!-- <iframe src="https://vine.co/v/57MKXmVKup1/embed/simple" width="600" height="600" frameborder="0"></iframe>
+                        <script src="https://platform.vine.co/static/scripts/embed.js"></script> -->
                     </div>
-                    <h3 class="row small-12 align-center">Colección de Vines</h3>
+                    <div class="row small-12 align-center text-center">
+                        <h3>
+                            Colección de Vines
+                        </h3>
+                        <p>
+                            Estas divertidas animaciones están hechas en After Effects, con una técnica que es muy buena par hacer gif y banners publicitarios.
+                            Apropócito tengo más en
+                            <a href="https://vine.co/toniodis" target="_blank">
+                                vine.co/toniodis
+                            </a>
+                        </p>
+                    </div>
+
                 </div><!-- Vines Ends -->
                 <div class="YTube column small-12 large-7">
                     <div class="row column widescreen flex-video collapse align-center">
                         <iframe width="1280" height="720" src="https://www.youtube.com/embed/k0UtOcGNEzc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="row small-12 align-center">
+                    <div class="row small-12 align-center text-center">
                         <h3>Play the demo reel 2016</h3>
+                        <p>
+                            Y descubre lo que motion graphic puede hacer por ti al dar vida a cualquier imagen publicitaria o informativa con la magia de la animación.
+                        </p>
                     </div>
                 </div>
             </div><!-- Audiovisuales ends -->
         </section><!--Ends Porfolio -->
         <!-- Portfolio Ends -->
         <!-- Footer -->
-        <footer id="Contact" data-magellan-target="Contact" class="row align-center small-up-1 full-height">
-            <div class="column text-center">
-                <p>Estoy en toda la web, compruébalo googleando tonioDis :)</p>
+        <footer id="Contact" data-magellan-target="Contact" class="Contact row small-12 align-center full-height text-center align-bottom">
+            <div class="row column align-center medium-11">
+                <div class="row align-center small-12">
+                    <h2>Estoy en toda la web, compruébalo googleando tonioDis :)</h2>
+                </div>
+                <div class="row column collapse medium-8 medium-up-7 align-spaced align-middle">
+                    <div class="column">
+                        <a class="linkedin" href="http://cl.linkedin.com/in/toniodis" target="_blank"><i class="fi-social-linkedin"></i> Antonio Silva</a>
+                    </div>
+                    <div class="column">
+                        <a class="facebook" href="https://www.facebook.com/toniodis" target="_blank"><i class="fi-social-facebook"></i> tonioDis</a>
+                    </div>
+                    <div class="column">
+                        <a class="twitter" href="https://twitter.com/toniodis" target="_blank"><i class="fi-social-twitter"></i> tonioDis</a>
+                    </div>
+                    <div class="column">
+                        <a class="github" href="http://github.com/toniodis/" target="_blank"><i class="fi-social-github"></i> tonioDis</a>
+                    </div>
+                    <div class="column">
+                        <a class="youtube" href="https://www.youtube.com/c/Dibujalo" target="_blank"><i class="fi-social-youtube"></i> tonioDis</a>
+                    </div>
+                </div>
             </div>
-            <div class="column linkedin">
-                <i class="fi-social-linkedin"></i>
-                <a href="http://cl.linkedin.com/in/toniodis" target="_blank">Antonio Silva</a>
-            </div>
-            <div class="column facebook">
-                <i class="fi-social-facebook"></i>
-                <a href="https://www.facebook.com/toniodis" target="_blank">tonioDis</a>
-            </div>
-            <div class="column twitter">
-                <i class="fi-social-twitter"></i>
-                <a href="https://twitter.com/toniodis" target="_blank">tonioDis</a>
-            </div>
-            <div class="column github">
-                <i class="fi-social-github"></i>
-                <a href="http://github.com/toniodis/" target="_blank">tonioDis</a>
-            </div>
-            <div class="column youtube">
-                <i class="fi-social-youtube"></i>
-                <a href="https://www.youtube.com/c/Dibujalo" target="_blank">tonioDis</a>
-            </div>
+                <div class="footer column small-12 align-self-bottom">© 2017 &bull; Diseñado codeado con amor por Antonio Silva @toniodis con <a href="http://foundation.zurb.com/" target="_blank">Foundations 6.3</a> &bull; Orgullosamente versionado y hosteado en &bull;<a href="https://github.com/" target="_blank">GitHub</a> <a href="https://github.com/toniodis/new-portfolio">ve el codigo</a> </div>
         </footer>
         <!-- Footer Ends -->
     </div><!-- off canvas content -->
-
-
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/vendor/foundation.js"></script>
 <script src="js/app.js"></script>

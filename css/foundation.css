@@ -605,10 +605,9 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #258faf; }
+    color: white; }
   a img {
     border: 0; }
-
 hr {
   clear: both;
   max-width: 62.5rem;
@@ -618,7 +617,6 @@ hr {
   border-right: 0;
   border-bottom: 1px solid #cacaca;
   border-left: 0; }
-
 ul,
 ol,
 dl {
@@ -2703,9 +2701,9 @@ select {
 .card-divider {
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
-  padding: 1rem;
-  background: #e6e6e6; }
-  .card-divider > :last-child {
+  padding: 0 15%;
+  background: rgba(177, 0, 4, 0.31); }
+.card-divider > :last-child {
     margin-bottom: 0; }
 
 .card-section {
